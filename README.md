@@ -318,20 +318,17 @@ The demo script (`demo.py`) supports two modes:
 Full interactive terminal UI using Textual:
 
 ```bash
-# Start Flask app first
+# Start server and run TUI
 ./run.sh
 
-# In another terminal
-source venv/bin/activate
-
 # Ingest CSV format (Format 1)
-python demo.py --format 1
+./run.sh --format 1
 
 # Or ingest Pipe format (Format 2)
-python demo.py --format 2
+./run.sh --format 2
 
 # Or ingest both for format comparison
-python demo.py --format both
+./run.sh --format both
 ```
 
 **Interactive Features:**
@@ -352,20 +349,17 @@ python demo.py --format both
 Minimal text output for scripting/automation:
 
 ```bash
-# Start Flask app first
-./run.sh
-
-# In another terminal
-source venv/bin/activate
+# Simple text output (defaults to Format 1)
+./run.sh --simple
 
 # Simple output with Format 1
-python demo.py --simple --format 1
+./run.sh --simple --format 1
 
 # Simple output with Format 2
-python demo.py --simple --format 2
+./run.sh --simple --format 2
 
 # Simple output with both formats (shows comparison)
-python demo.py --simple --format both
+./run.sh --simple --format both
 ```
 
 **Simple Mode Output:**
